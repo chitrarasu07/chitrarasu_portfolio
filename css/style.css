@@ -1,0 +1,379 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+   
+    z-index: 100px;
+    background-color: black;
+}
+.whole-container{
+    padding-left: 20px ;
+    padding-right: 20px ;
+    z-index: -100;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    color: white;
+}
+.title{
+    text-indent: 100px;
+    width: 50%;
+    
+   
+}
+.name{
+    color:orange;
+}
+.title span{
+    font-size: 20px;
+    color: white;
+}
+.menus{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menus a{
+    text-decoration: none;
+    padding: 5px;
+
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.menus a:hover{
+    color:black;
+    border-radius: 10px;
+    background-color:orange;
+}
+
+.menu-btn .btn{
+    padding: 15px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.img-back{
+    position: absolute;
+    
+    left: 150px;
+    opacity:0.7;
+
+    top: 130px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    z-index: -100px;
+    background-color: orange;
+}
+/* ............................................. */
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.8;
+}
+
+
+.profileimg1 img{
+    margin: 10px;
+    width: 450px;
+     height: 600px;
+     filter: drop-shadow(0px 0px 3px white);
+    /*margin-top: 50px; */
+    border-radius: 50%;
+    
+    /* border: 2px solid orange ; */
+    /* background-color: rgb(32, 115, 249); */
+   
+}
+.profileimg1{
+    z-index: 1;
+}
+.username span{
+    color: orange;
+}
+
+.hire-btn button{
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    
+   
+}
+.hire-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+/* .................. container 2 ........................ */
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+    margin: 10px;
+    line-height: 1.5;
+}
+.border-top{
+    width: 99%;
+    margin: 5px;
+    border-top: 1px dashed white;
+}
+.content1, .content2, .content3, .content4{
+    margin: 10px;
+}
+.content1>h3{
+    color: orange;
+}
+.content2>h3{
+    color: orange;
+}
+.content3>h3{
+    color: orange;
+}
+.content4>h3{
+    color: orange;
+}
+/* .................container3............................ */
+.container2{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ............................................ */
+
+
+/* 
+.container3{
+    text-align: center;
+padding-left: 80px;
+padding-right: 80px;
+
+
+}
+.container3>h1{
+    font-size: 60px;
+    color: orange;
+}
+.card1{
+    height: 200px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 2px orange;
+    margin: 10px;
+    padding: 5px;
+    width: 650px;
+    border-radius: 20px;
+  border: 2px solid white;
+}
+.card1:hover{
+    scale: 1.1;
+
+    box-shadow: 0px 0px 10px 5px orange;
+}
+.card1>button{
+    font-weight: bolder;
+    padding: 3px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgb(242, 92, 37);
+}
+.card2{
+    float: right;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 2px orange;
+    margin: 10px;
+    padding: 5px;
+    width: 650px;
+    border-radius: 20px;
+  border: 2px solid white;
+  
+}
+.card2:hover{
+    scale: 1.1;
+   
+    box-shadow: 0px 0px 10px 5px orange;
+}
+.card2>button{
+    font-weight: bolder;
+    padding: 3px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgb(242, 92, 37);
+}
+.card3{
+    clear: right;
+    cursor: pointer;
+    margin: 10px;
+    height: 150px;
+    padding: 5px;
+    box-shadow: 0px 0px 1px 2px orange;
+    width: 650px;
+    border-radius: 20px;
+  border: 2px solid white;
+}
+.card3:hover{
+    scale: 1.1;
+
+    box-shadow: 0px 0px 10px 5px orange;
+}
+.card3>button{
+    font-weight: bolder;
+    padding: 3px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgb(242, 92, 37);
+}
+.card4{
+   float: right;
+   cursor: pointer;
+   box-shadow: 0px 0px 1px 2px orange;
+    margin: 10px;
+    padding: 5px;
+    width: 650px;
+    border-radius: 20px;
+  border: 2px solid white;
+}
+.card4:hover{
+    scale: 1.1;
+
+    box-shadow: 0px 0px 10px 5px orange;
+}
+.card4>button{
+    font-weight: bolder;
+    padding: 3px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgb(242, 92, 37);
+} */
+
+/* ............ media quries.......... */
+@media only screen and (min-width:300px) and (max-width:780px)
+{
+     
+    .menus{
+        display: none;
+    }
+    .menu-btn .btn{
+        display: block;
+    }
+
+    .title{
+        text-indent: 20px;
+    }
+
+    .img-back{
+        position: absolute;
+    
+        left: 80px;
+        opacity:0.7;
+    
+        top: 80px;
+        width: 200px;
+        height: 200px;
+
+    }
+    .hire-btn{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        justify-content: center;
+       
+    }
+    .hire-btn button{
+        
+       width: 200px;
+    }
+        .profileimg1 img{
+            width: 240px;
+            height: 280px; 
+        }
+        .container1{
+          line-height: 1.5;
+            flex-direction: column;
+            text-align: center;
+        }
+        /* .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        /* .......................................... */
+        .container3{
+            display: flex;
+            width: 100%;
+            padding-left: 0px;
+            text-align: start;
+            align-items: center;
+            padding-right: 0px;
+            flex-direction: column;
+        }
+            .card1{
+                overflow: hidden;
+                height: 180px;
+                width: 400px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .container3>h1{
+                font-size: 30px;
+             }
+             .card2{
+                overflow: hidden;
+                height: 180px;
+                width: 400px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+           
+             .card3{
+                overflow: hidden;
+                height: 180px;
+                width: 400px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+           
+             .card4{
+                overflow: hidden;
+                height: 180px;
+                width: 400px;
+                padding-left: 0px;
+                padding-right: 0px;
+            } 
+            
+
+}
+
