@@ -62,10 +62,13 @@ body{
     background-color:orange;
 }
 
-.menu-btn .btn{
-    padding: 15px;
-    background-color: white;
-    color: black;
+ .menu-btn{
+    font-size: 30px;
+ 
+  margin-right: 5px;
+  
+  background-color:black;
+  border:none;
     display: none;
 }
 
@@ -93,19 +96,26 @@ body{
 
 
 .profileimg1 img{
-    margin: 10px;
+    
     width: 450px;
-     height: 600px;
+     height: 550px;
      filter: drop-shadow(0px 0px 3px white);
-    /*margin-top: 50px; */
+    margin-top: 0px;
     border-radius: 50%;
     
-    /* border: 2px solid orange ; */
-    /* background-color: rgb(32, 115, 249); */
+  
    
 }
 .profileimg1{
     z-index: 1;
+background-color: orange;
+border-radius: 50%;
+width: 450px;
+height: 450px;
+margin-top: 50px;
+
+filter: drop-shadow(0px 0px 5px white);
+
 }
 .username span{
     color: orange;
@@ -154,8 +164,17 @@ body{
     align-items: center;
     text-align: center;
     gap: 30px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 20px;
+
+}
+.profileimg2{
+    margin-left: 170px;
+    background-color: orange;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 6px white);
 
 }
 
@@ -163,11 +182,12 @@ body{
     width: 300px;
     height: 400px;
     border-radius: 10%;
-    filter: drop-shadow(0px 0px 2px white);
+    filter: drop-shadow(0px 0px 1px white);
 }
 .titlename{
     color: orange;
     font-size: 30px;
+    margin-top:150px;
 }
 #abt span {
     
@@ -176,8 +196,11 @@ body{
 .abouts h3{
     font-size: 50px;
 }
+.titlename{
+    margin-top: 60px;
+}
 
- #abt, .profileimg2, .titlename, p{
+ #abt, .profileimg2, p{
     margin-top: 10px;
  }
 
@@ -235,12 +258,30 @@ body{
     .menus{
         display: none;
     }
-    .menu-btn .btn{
+    .menus{
+    
+        position: absolute;
+        top: 50px;
+        flex-direction: column;
+        right: 10px;
+        gap: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: bolder;
+        background-color: darkorchid;
+        padding: 5px;
+       
+    }
+    
+     .menu-btn{
         display: block;
     }
 
     .title{
         text-indent: 20px;
+    }
+    .titlename{
+        margin-top: 20px;
     }
     
     .username{
@@ -269,8 +310,18 @@ body{
        width: 200px;
     }
         .profileimg1 img{
-            width: 240px;
-            height: 280px; 
+            width: 230px;
+            height: 300px; 
+        }
+        .content1{
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .profileimg1{
+            width: 230px;
+            height: 240px;
         }
         .container1{
           line-height: 1.5;
@@ -280,7 +331,7 @@ body{
         .container2{
             display: flex;
             flex-direction: column;
-            margin-top: 0px;
+            margin-top: 50px;
         }
         /* .......................................... */
        .img-back2{
@@ -297,8 +348,15 @@ body{
         background-color: orange;
     } 
     .profileimg2 img{
-        width: 250px;
-    height: 300px;
+        width: 200px;
+    height: 250px;
+    }
+
+    .profileimg2{
+        width: 230px;
+        height: 240px;
+        margin-left: 20px;
+    
     }
             
 

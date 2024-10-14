@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port folio</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <script src="https://kit.fontawesome.com/1957259b30.js" crossorigin="anonymous"></script>
 </head>
+<script>
+    function openmenu()
+    {
+        
+        if(document.getElementById("menus").style.display === "none")
+        {
+            document.getElementById("menus").style.display="flex"
+        }
+        else{
+            document.getElementById("menus").style.display="none"
+        }
+
+    }
+</script>
 <body>
     
         <div class="navbar" >
         <div class="title">
             <h1 class="name">Portfolio.<span>Info</span></h1>
         </div>
-        <div class="menus">
-            <a href="#home" id="homecolor">Home</a>
-            <a href="#abt">About</a>
-            <a href="#skl">Skills</a>
-            <a href="#">Contact</a>
+        <div class="menus" id="menus">
+            <a href="#home" id="homecolor" onclick="openmenu()">Home</a>
+            <a href="#abt" onclick="openmenu()">About</a>
+            <a href="#skl" onclick="openmenu()">Skills</a>
+            <a href="#" onclick="openmenu()">Contact</a>
         </div>
-        <div class="menu-btn" id="icon">
-            <button class="btn"><i class="fa-solid fa-bars"></i></button>
-        </div>
+             
+            <button class="menu-btn" id="click" onclick="openmenu()"><i class="fa-solid fa-bars"></i></button>
+        
     </div>
-    <div class="whole-container"  id="home">
+    <div  id="home"></div>
+    <div class="whole-container" >
     <div class="container1" >
         <div class="profileimg1"  >
             <img src="./images/profileimg background removed.png" />
@@ -44,11 +60,11 @@
         </div>
 
         <!-- its an image back ground -->
-        <div class="img-back"></div> 
-    </div>
+        <!-- <div class="img-back"></div> -->
+    </div> 
 
 
-    <div class="img-back2"></div> 
+    <!-- <div class="img-back2"></div>  -->
 <div class="container2">
     
     <div class="abouts">
