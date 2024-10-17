@@ -5,7 +5,7 @@
     color: white;
 }
 body{
-   
+   width: 100%;
     z-index: 100px;
     background-color: black;
 }
@@ -141,6 +141,7 @@ filter: drop-shadow(0px 0px 5px white);
     color: white;
     background-color: transparent;
     border: 2px solid orange;
+    cursor: pointer;
 }
 .hire-btn{
     display: flex;
@@ -155,10 +156,12 @@ filter: drop-shadow(0px 0px 5px white);
     background-color: transparent;
     color: white;
     border: 2px solid orange;
+    
 }
 .hire-btn> .hover:hover{
     color: black;
     background-color: orange;
+    cursor: pointer;
 }
 
 /* .................. container 2 ........................ */
@@ -232,16 +235,77 @@ filter: drop-shadow(0px 0px 5px white);
     border: 2px solid orange;
     border-radius: 5px;
     margin-top: 10px;
+    
 }
 
 .abouts button:hover{
     color: black;
     background-color: orange;
+    cursor: pointer;
 }
 
 
 /* .................container3............................ */
+  .skill{
+    color: orange;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
 
+.container3{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+   
+   
+}
+.content-card{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+.card> .item{
+   width:200px;
+   height: 200px;
+   
+}
+.card> button{
+   
+ margin: 10px;
+  border-radius: 10px;
+    background-color:transparent;
+    color:white;
+    padding: 10px;
+    font-weight: bolder;
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
+.card> button:hover{
+background-color: orange;
+border: 2px solid orange;
+color:black;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px orange;
+   cursor: pointer;
+}
 
 
 
@@ -367,7 +431,13 @@ filter: drop-shadow(0px 0px 5px white);
         margin-left: 20px;
     
     }
+    /* ..............container3.......... */
             
-
+   .container1{
+    flex-direction: column;
+   }
+   .content-card{
+    flex-direction: column;
+   }
 }
 
